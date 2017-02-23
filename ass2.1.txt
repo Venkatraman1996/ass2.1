@@ -1,0 +1,153 @@
+1) public class acad
+{
+public static void main(String s[])
+{
+int a=10;int b=10;
+int c=a+b;
+System.out.println(c);
+}
+}
+================================================================================================================================================
+2) import java.util.*;
+public class acad
+{
+public static void main(String y[])
+{
+Scanner s= new Scanner(System.in);
+int a=s.nextInt();int b=s.nextInt();
+int c=a+b;
+System.out.println(c);
+}
+}
+=========================================================================================
+3) import java.util.*;
+public class acad
+{
+public static void main(String y[])
+{
+Scanner s= new Scanner(System.in);
+int a=s.nextInt();int b=s.nextInt();
+int c=a+b;
+System.out.println("First number is:"+a );
+System.out.println("Second number is:"+b);
+System.out.println("Sum is: "+c);
+}
+}
+==========================================================================================
+4) import java.util.*;
+public class acad
+{
+public static void main(String y[])
+{
+Scanner s= new Scanner(System.in);
+int a=s.nextInt();int b=s.nextInt();
+for(int i=a;i<=b;i++)
+{
+if(i%2==0)
+{
+System.out.println("odd number:"+i );
+}else{
+System.out.println("even number:"+i );}}}}
+========================================================================================
+5)import java.util.*;
+public class Main
+{
+public static void main(String y[])
+{
+Scanner s= new Scanner(System.in);int b=1;
+int a=s.nextInt();
+for(int i=1;i<=10;i++)
+{b=i*a;
+    System.out.println(a+"*"+i+"="+b );
+}
+}}
+=======================================================================================
+6)
+import java.util.*;
+public class Main
+{
+public static void main(String is[])
+{
+
+int c=sum(1,2);
+int d=sum(5,3,9);
+System.out.println(c);
+System.out.println(d);
+}
+public static int sum(int a,int b)
+{
+   
+int i=a+b;
+return i;
+}
+public static int sum(int a,int b,int c)
+{
+   
+int i=a+b+c;
+return i;
+}
+}
+======================================================================================
+7)
+yes we can overload method with same return type.
+eg:
+import java.util.*;
+public class Main
+{
+public static void main(String is[])
+{
+
+int c=sum(1,2);
+int d=sum(5,3,9);
+System.out.println(c);
+System.out.println(d);
+}
+public static int sum(int a,int b)
+{
+   
+int i=a+b;
+return i;
+}
+public static int sum(int a,int b,int c)
+{
+   
+int i=a+b+c;
+return i;
+}
+}
+============================================================================
+8)import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        int n, temp;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter no. of elements you want in array:");
+        n = s.nextInt();
+        int a[] = new int[n];
+        System.out.println("Enter all the elements:");
+        for (int i = 0; i < n; i++) 
+        {
+            a[i] = s.nextInt();
+        }
+        for (int i = 0; i < n; i++) 
+        {
+            for (int j = i + 1; j < n; j++) 
+            {
+                if (a[i] < a[j]) 
+                {
+                    temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+        
+        for (int i = 0; i < n - 1; i++) 
+        {
+            System.out.print(a[i] + ",");
+        }
+        System.out.print(a[n - 1]);
+    }
+}
